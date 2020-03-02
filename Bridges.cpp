@@ -1,3 +1,5 @@
+// naayana....line no 54 lo id[v]...low[v] kadu...endukante...comparision should be done in same dfs tree. 
+
 #include<bits/stdc++.h>
 using namespace std;
 #define pb push_back
@@ -49,7 +51,7 @@ void dfs(int u)
         }
         else if(v!=parent[u])
         {
-            low[u]=min(low[u],low[v]);
+            low[u]=min(low[u],id[v]);
         }
     }
 }
